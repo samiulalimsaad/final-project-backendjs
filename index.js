@@ -41,7 +41,9 @@ app.get("/test", (req, res) => {
 });
 app.get("*", (_, res) => {
     res.send(
-        `<h1 style="display: grid;place-items: center; justify-items: center; height: 100vh;width: 100vw;">Route Not Found</h1>`
+        `<h1 style="display: grid;place-items: center; justify-items: center; height: 100vh;width: 100vw;">Route Not Found
+        ${process.env.MONGODB_URL}
+        </h1>`
     );
 });
 
