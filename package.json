@@ -4,6 +4,7 @@
     "main": "app.js",
     "license": "MIT",
     "scripts": {
+        "build": "node --version",
         "dev": "nodemon app.js",
         "start": "NODE_ENV=production node app.js"
     },
